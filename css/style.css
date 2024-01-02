@@ -47,7 +47,7 @@ body {
 
 .page h1 {
     margin-bottom: 1.5rem;
-    font-size: 48px;
+    font-size: 60px;
 }
 
 .page p {
@@ -63,6 +63,7 @@ body {
     padding: 1rem;
     margin-top: 1rem;
     border-radius: 30px;
+    transition: all 0.5s ease-in-out ;
 }
 
 .btn:hover {
@@ -80,3 +81,101 @@ body {
     background: #f9d8c6; 
 }
 
+#page-1 h1 {
+    transform: translateY(-1200px);
+    animation: heading 1.5s forwards ease-in-out;
+}
+
+@keyframes heading {
+    from {
+        transform: translateY(-1200px) ;
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+#page-1 .a {
+    transform: translateX(-2000PX);
+    animation: paragraph1 2.5s forwards ease-in-out;
+}
+
+@keyframes paragraph1 {
+    to {
+        transform: translateX(0); 
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(78, 4, 45);
+    }
+}
+
+#page-1 .b {
+    transform: translateX(2000px);
+    animation: paragraph2 3.5s forwards ease-in-out;
+}
+
+@keyframes paragraph2 {
+    from {
+        transform: translateX(2000px);
+    }
+    to {
+        transform: translateX(0); 
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(78, 4, 45);
+    }
+}
+
+#page-1 .c {
+    animation: paragraph3 4.5s forwards ease-in-out;
+}
+
+@keyframes paragraph3 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity:0.5;
+    }
+
+    75% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(78, 4, 45);
+    }
+}
+
+#page-1 .d {
+    transform: translateX(-2000px);
+    animation: paragraph4 6.5s forwards ease-in-out;
+}
+
+@keyframes paragraph4 {
+    0% {
+        transform: translateX(-2000px); 
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateX(0);
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(78, 4, 45);
+        opacity: 1;
+    }
+}
